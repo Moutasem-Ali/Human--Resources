@@ -1,0 +1,126 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Cairo', sans-serif;
+    
+
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('fonts/Cairo-Regular.ttf') format('truetype');
+        
+    font-weight: 400;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+    
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.wrapper{
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    backdrop-filter: blur(8px);
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+.input-field label{
+    position: absolute;
+    color: #000;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+.input-field input{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.input-field input:focus~label,
+.input-field input:valid~label{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #000;
+}
+.remember{
+    accent-color: #000;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label p{
+    margin-right: 8px;
+}
+.wrapper a{
+    color: #000;
+    text-decoration: underline;
+}
+button{
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    
+}
+.register{
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+}
+
+  
+   
+
